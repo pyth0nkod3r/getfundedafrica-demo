@@ -1,0 +1,31 @@
+.fluid-width-video-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.fluid-width-video-wrapper iframe,
+.fluid-width-video-wrapper object,
+.fluid-width-video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+.navbar-collapse.collapsing {
+    height: auto;
+}
+
+.navbar-collapse.show {
+    display: block;
+}
+
+
+.bullet {
+list-style-type: disc;
+}
