@@ -83,11 +83,11 @@
 }
 
 .background-image-5 {
-    background-image: url("../images/demo-branding-agency-home-05.jpg");
+    background-image: url("../images/demo-branding-agency-home-05.png");
 }
 
 .background-image-6 {
-    background-image: url("../images/demo-branding-agency-home-06.jpg");
+    background-image: url("../images/demo-branding-agency-home-06.png");
 }
 
 .slider-item-1 {
@@ -117,8 +117,10 @@ h1#banner-ad {
     font-size: 3rem;
     font-weight: 5rem;
 }
-
-#lider-pagination-customization {
+.stacked{
+    height: calc(0px + 100vh);
+}
+#slider-pagination-customization {
     margin-top: 3.5rem;
 }
 
