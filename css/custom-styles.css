@@ -13,6 +13,7 @@
     width: 100%;
     height: 100%;
 }
+
 .navbar-collapse {
     transition: all 0.3s ease;
 }
@@ -26,6 +27,95 @@
 }
 
 
+
 .bullet {
-list-style-type: disc;
+    list-style-type: disc;
+}
+
+.logos {
+    overflow: hidden;
+
+}
+
+.default-logo {
+    transform: scale(6);
+    margin-left: 3rem;
+}
+
+.alt-logo {
+    transform: scale(6);
+    margin-left: 3rem;
+}
+
+.page-layout {
+    z-index: 1;
+}
+
+.cover-background-1 {
+    background-image: url("../images/demo-branding-agency-slider-01.jpg");
+}
+
+.cover-background-2 {
+    background-image: url("../images/demo-branding-agency-slider-02.jpg");
+}
+
+.cover-background-3 {
+    background-image: url('../images/demo-branding-agency-slider-03.jpg');
+}
+
+.xl-outside-box-right-15 {
+    margin-right: -15vw;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.swipe-slide-edit {
+    width: 774px;
+    opacity: 1;
+    transform: translate3d(-1548px, 0px, 0px);
+    transition-duration: 0ms;
+}
+
+.background-image-4 {
+    background-image: url("../images/demo-branding-agency-home-04.jpg");
+}
+
+.background-image-5 {
+    background-image: url("../images/demo-branding-agency-home-05.jpg");
+}
+
+.background-image-6 {
+    background-image: url("../images/demo-branding-agency-home-06.jpg");
+}
+
+.slider-item-1 {
+    transition-duration: 0ms;
+    transition-delay: 0ms;
+}
+
+.slider-item-2 {
+    width: 774px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+}
+
+.slider-item-0 {
+    width: 774px;
+    opacity: 1;
+    transform: translate3d(-774px, 0px, 0px);
+    transition-duration: 0ms;
+}
+
+.swiper-3 {
+    --swiper-progress: 66.67%;
+}
+h1#banner-ad{
+    font-size: 3rem;
+    font-weight: 5rem;
+}
+#slider-pagination-customization{
+    margin-top: 3.5rem;
 }
