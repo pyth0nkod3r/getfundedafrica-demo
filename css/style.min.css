@@ -3303,16 +3303,20 @@ textarea:focus {
     width: 100%;
     position: absolute;
     overflow: hidden;
-    z-index: 999;
+    z-index: 9999;
     display: flex;
     align-items: center
 }
 
 .stack-box .stack-item.stack-item-02 {
-    z-index: 99
+    z-index: 999
 }
 
 .stack-box .stack-item.stack-item-03 {
+    z-index: 99
+}
+
+.stack-box .stack-item.stack-item-04 {
     z-index: 9
 }
 

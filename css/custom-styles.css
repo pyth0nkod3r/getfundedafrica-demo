@@ -90,6 +90,10 @@
     background-image: url("../images/demo-branding-agency-home-06.png");
 }
 
+.background-image-7 {
+    background-image: url("../images/demo-branding-agency-home-06.png");
+}
+
 .slider-item-1 {
     transition-duration: 0ms;
     transition-delay: 0ms;
@@ -117,16 +121,17 @@ h1#banner-ad {
     font-size: 3rem;
     font-weight: 5rem;
 }
-.stacked{
+
+.stacked {
     height: calc(0px + 100vh);
 }
-#slider-pagination-customization {
-    margin-top: 3.5rem;
-}
+
+#slider-pagination-customization {}
 
 .footer-background {
     background-image: url('../images/demo-branding-agency-pattern.svg')
 }
-.footer-logo img{
-transform: scale(5);
+
+.footer-logo img {
+    transform: scale(5);
 }
