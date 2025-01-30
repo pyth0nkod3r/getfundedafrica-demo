@@ -34,7 +34,6 @@
 
 .logos {
     overflow: hidden;
-
 }
 
 .default-logo {
@@ -45,6 +44,43 @@
 .alt-logo {
     transform: scale(6);
     margin-left: 2.7rem;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 991px) {
+    .default-logo, .alt-logo {
+        transform: scale(3);
+        margin-left: 1rem;
+    }
+
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.8rem 1rem;
+        color: #333 !important;
+    }
+
+    .navbar-toggler {
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .default-logo, .alt-logo {
+        transform: scale(2.5);
+        margin-left: 0.5rem;
+    }
 }
 
 .page-layout {
@@ -144,4 +180,250 @@ footer.pb-1 {
 
 div.bottom-40px {
     bottom: 3rem;
+}
+
+/* Root variables for typography */
+:root {
+    --h1-font-size: clamp(2rem, 5vw, 3.5rem);
+    --h2-font-size: clamp(1.8rem, 4vw, 3rem);
+    --h3-font-size: clamp(1.5rem, 3vw, 2.5rem);
+    --body-font-size: clamp(1rem, 2vw, 1.2rem);
+    --banner-title-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+/* Responsive typography */
+@media (max-width: 991px) {
+    h1, .h1-style {
+        font-size: var(--h1-font-size);
+        line-height: 1.3;
+    }
+
+    h2, .h2-style {
+        font-size: var(--h2-font-size);
+        line-height: 1.3;
+    }
+
+    h3, .h3-style {
+        font-size: var(--h3-font-size);
+        line-height: 1.3;
+    }
+
+    p, .body-text {
+        font-size: var(--body-font-size);
+        line-height: 1.6;
+    }
+
+    #banner-ad {
+        font-size: var(--banner-title-size);
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Responsive spacing */
+@media (max-width: 991px) {
+    .md-mb-0 { margin-bottom: 0 !important; }
+    .md-mb-10 { margin-bottom: 10px !important; }
+    .md-mb-20 { margin-bottom: 20px !important; }
+    .md-mb-30 { margin-bottom: 30px !important; }
+    .md-mt-0 { margin-top: 0 !important; }
+    .md-mt-10 { margin-top: 10px !important; }
+    .md-mt-20 { margin-top: 20px !important; }
+    .md-mt-30 { margin-top: 30px !important; }
+    .md-p-15 { padding: 15px !important; }
+    .md-p-30 { padding: 30px !important; }
+}
+
+@media (max-width: 576px) {
+    .sm-mb-0 { margin-bottom: 0 !important; }
+    .sm-mb-10 { margin-bottom: 10px !important; }
+    .sm-mb-20 { margin-bottom: 20px !important; }
+    .sm-mb-30 { margin-bottom: 30px !important; }
+    .sm-mt-0 { margin-top: 0 !important; }
+    .sm-mt-10 { margin-top: 10px !important; }
+    .sm-mt-20 { margin-top: 20px !important; }
+    .sm-mt-30 { margin-top: 30px !important; }
+    .sm-p-15 { padding: 15px !important; }
+    .sm-p-30 { padding: 30px !important; }
+}
+
+/* Stack box responsive styles */
+@media (max-width: 991px) {
+    .stack-box .stack-item {
+        height: auto !important;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .stack-box .stack-item .stack-item-wrapper {
+        position: relative;
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .stack-box .stack-item .cover-background {
+        height: 300px !important;
+        position: relative !important;
+        margin-bottom: 30px;
+    }
+
+    .stack-box .stack-item .position-absolute {
+        position: relative !important;
+        transform: none !important;
+        padding: 0 20px;
+    }
+
+    .stack-box .stack-item ul {
+        margin-left: 20px;
+    }
+
+    .stack-box .stack-item .btn {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .stack-box .stack-item .cover-background {
+        height: 200px !important;
+    }
+
+    .stack-box .stack-item .stack-item-wrapper {
+        padding: 40px 0;
+    }
+
+    .stack-box .stack-item h1 {
+        font-size: var(--h2-font-size);
+    }
+}
+
+/* Banner section responsive styles */
+@media (max-width: 991px) {
+    .full-screen {
+        height: auto !important;
+        min-height: calc(100vh - 80px);
+    }
+
+    .banner-content {
+        padding: 100px 20px;
+    }
+
+    .swiper-slide .cover-background {
+        height: 300px !important;
+        background-position: center !important;
+    }
+
+    .outside-box-right-10 {
+        margin-right: 0;
+    }
+
+    .border-start {
+        border: none !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .marquee-slide {
+        font-size: calc(var(--h1-font-size) * 0.8);
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-content {
+        padding: 80px 15px;
+    }
+
+    .swiper-slide .cover-background {
+        height: 200px !important;
+    }
+
+    .marquee-slide {
+        font-size: calc(var(--h1-font-size) * 0.6);
+    }
+}
+
+/* Touch interaction improvements */
+@media (hover: none) {
+    .btn, .nav-link, .clickable {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:active, .nav-link:active, .clickable:active {
+        opacity: 0.7;
+    }
+
+    .hover-box:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
+
+/* Responsive utilities */
+@media (max-width: 991px) {
+    .md-hide {
+        display: none !important;
+    }
+
+    .md-show {
+        display: block !important;
+    }
+
+    .md-text-center {
+        text-align: center !important;
+    }
+
+    .md-w-100 {
+        width: 100% !important;
+    }
+
+    .md-h-auto {
+        height: auto !important;
+    }
+
+    .md-flex-column {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .sm-hide {
+        display: none !important;
+    }
+
+    .sm-show {
+        display: block !important;
+    }
+
+    .sm-text-center {
+        text-align: center !important;
+    }
+
+    .sm-w-100 {
+        width: 100% !important;
+    }
+
+    .sm-h-auto {
+        height: auto !important;
+    }
+
+    .sm-flex-column {
+        flex-direction: column !important;
+    }
+}
+
+/* Improved touch targets for mobile */
+@media (max-width: 991px) {
+    .btn, .nav-link, .clickable {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-toggler {
+        width: 44px;
+        height: 44px;
+    }
 }
