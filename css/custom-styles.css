@@ -1,4 +1,4 @@
-.fluid-width-video-wrapper {
+/* .fluid-width-video-wrapper {
     width: 100%;
     position: relative;
     padding: 0;
@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */
 
 .navbar-collapse {
     transition: all 0.3s ease;
@@ -44,7 +44,7 @@
 
 .alt-logo {
     transform: scale(6);
-    margin-left: 3rem;
+    margin-left: 2.7rem;
 }
 
 .page-layout {
@@ -52,15 +52,15 @@
 }
 
 .cover-background-1 {
-    background-image: url("../images/demo-branding-agency-slider-01.jpg");
+    background-image: url("../images/demo-branding-agency-slider-01.png");
 }
 
 .cover-background-2 {
-    background-image: url("../images/demo-branding-agency-slider-02.jpg");
+    background-image: url("../images/demo-branding-agency-slider-02.png");
 }
 
 .cover-background-3 {
-    background-image: url('../images/demo-branding-agency-slider-03.jpg');
+    background-image: url('../images/demo-branding-agency-slider-03.png');
 }
 
 .xl-outside-box-right-15 {
@@ -132,4 +132,12 @@ h1#banner-ad {
 
 .footer-logo img {
     transform: scale(5);
+}
+
+.highlighted {
+    background-color: rgba(224, 224, 26, 0.4);
+}
+
+footer.pb-1 {
+    padding-bottom: 0.1rem;
 }

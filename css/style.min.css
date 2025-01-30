@@ -3288,7 +3288,7 @@ textarea:focus {
 .stack-box {
     position: relative;
     z-index: 1;
-    height: 300vh
+    min-height: 500vh
 }
 
 .stack-box .stack-box-contain {
