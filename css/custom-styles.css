@@ -50,8 +50,8 @@
 }
 
 .default-logo, .alt-logo {
-    transform: scale(5);
-    margin-left: 3.5rem;
+    transform: scale(4);
+    margin-left: 2.5rem;
     max-width: 50px;
     height: auto;
 }
@@ -59,22 +59,22 @@
 /* Logo responsive styles */
 @media (max-width: 1200px) {
     .default-logo, .alt-logo {
-        transform: scale(4.5);
-        margin-left: 3rem;
+        transform: scale(3.5);
+        margin-left: 2rem;
     }
 }
 
 @media (max-width: 1024px) {
     .default-logo, .alt-logo {
-        transform: scale(4);
-        margin-left: 2.5rem;
+        transform: scale(3);
+        margin-left: 1.8rem;
     }
 }
 
 @media (max-width: 991px) {
     .default-logo, .alt-logo {
-        transform: scale(3.5);
-        margin-left: 2rem;
+        transform: scale(2.5);
+        margin-left: 1.5rem;
     }
 }
 
@@ -82,42 +82,42 @@
     .logos {
         padding-left: 0;
     }
-
+    
     .default-logo, .alt-logo {
-        transform: scale(3);
-        margin-left: 1.5rem;
+        transform: scale(2.2);
+        margin-left: 1.2rem;
         max-width: 40px;
     }
 }
 
 @media (max-width: 576px) {
     .default-logo, .alt-logo {
-        transform: scale(2.5);
-        margin-left: 1.2rem;
+        transform: scale(2);
+        margin-left: 1rem;
         max-width: 35px;
     }
 }
 
 @media (max-width: 425px) {
     .default-logo, .alt-logo {
-        transform: scale(2.2);
-        margin-left: 1rem;
+        transform: scale(1.8);
+        margin-left: 0.8rem;
         max-width: 30px;
     }
 }
 
 @media (max-width: 375px) {
     .default-logo, .alt-logo {
-        transform: scale(2);
-        margin-left: 0.8rem;
+        transform: scale(1.6);
+        margin-left: 0.6rem;
         max-width: 25px;
     }
 }
 
 @media (max-width: 320px) {
     .default-logo, .alt-logo {
-        transform: scale(1.8);
-        margin-left: 0.6rem;
+        transform: scale(1.4);
+        margin-left: 0.5rem;
         max-width: 20px;
     }
 }
@@ -952,7 +952,7 @@ div.bottom-40px {
     .card-section {
         padding: 30px 0;
     }
-
+    
     /* Adjust spacing when card section follows stack box */
     .stack-box + .card-section {
         padding-top: 20px;
@@ -993,111 +993,5 @@ div.bottom-40px {
     .row > [class*='col-'] {
         padding-left: 10px;
         padding-right: 10px;
-    }
-}
-
-/* Ad Banner Section */
-.ad-banner {
-    background: linear-gradient(135deg, var(--base-color) 0%, var(--secondary-color) 100%);
-    padding: 80px 0;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    z-index: 1;
-}
-
-.ad-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../images/demo-branding-agency-pattern.svg') center/cover;
-    opacity: 0.1;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.ad-banner__content {
-    text-align: center;
-    color: var(--white);
-    position: relative;
-    z-index: 2;
-    padding: 0 20px;
-}
-
-.ad-banner__title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    color: var(--white);
-}
-
-.ad-banner__text {
-    font-size: 1.25rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.9;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--white);
-}
-
-.ad-banner__cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    color: var(--base-color);
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.ad-banner__cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    background-color: #f8f9fa;
-    color: var(--base-color);
-}
-
-/* Ad Banner Responsive Styles */
-@media (max-width: 991px) {
-    .ad-banner {
-        padding: 60px 0;
-    }
-
-    .ad-banner__title {
-        font-size: 2.5rem;
-    }
-
-    .ad-banner__text {
-        font-size: 1.1rem;
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .ad-banner {
-        padding: 40px 0;
-    }
-
-    .ad-banner__title {
-        font-size: 2rem;
-    }
-
-    .ad-banner__text {
-        font-size: 1rem;
-    }
-
-    .ad-banner__cta {
-        padding: 0.875rem 1.75rem;
-        font-size: 1rem;
     }
 }
