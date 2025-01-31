@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             delay: 0,
             disableOnInteraction: false
         },
-        speed: 5000,
+        speed: 20000,
         grabCursor: true,
         mousewheelControl: true,
         keyboardControl: true,
