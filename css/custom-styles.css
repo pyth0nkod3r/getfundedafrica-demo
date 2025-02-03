@@ -55,8 +55,20 @@
     min-height: 500vh;
 }
 
+.stack-box .stack-item {
+    position: relative;
+    width: 100%;
+}
+
 .stack-box .stack-item.stack-item-04 {
-    z-index: 8
+    z-index: 8;
+}
+
+.stack-box .cover-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 /* Background Images */
@@ -198,6 +210,31 @@
     .ad-banner {
         padding: 60px 0;
     }
+
+    .stack-box {
+        min-height: auto;
+    }
+
+    .stack-box .stack-item {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    .stack-box .cover-background {
+        min-height: 400px !important;
+        height: 400px !important;
+        position: relative !important;
+        width: 100%;
+    }
+
+    .stack-box .stack-item-wrapper {
+        height: auto;
+    }
+
+    .stack-box .row.full-screen {
+        min-height: auto !important;
+        height: auto !important;
+    }
 }
 
 @media (max-width: 768.98px) and (min-width: 576px) {
@@ -262,6 +299,11 @@
     .ad-banner {
         padding: 50px 0;
     }
+
+    .stack-box .cover-background {
+        min-height: 350px !important;
+        height: 350px !important;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -325,6 +367,11 @@
 
     .ad-banner {
         padding: 40px 20px;
+    }
+
+    .stack-box .cover-background {
+        min-height: 300px !important;
+        height: 300px !important;
     }
 }
 
