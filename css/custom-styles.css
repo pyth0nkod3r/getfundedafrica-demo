@@ -673,6 +673,7 @@ footer {
     width: 75px;
     height: auto;
     display: none;
+    top: 120px;
 }
 
 @media (min-width: 768px) {
@@ -681,6 +682,18 @@ footer {
         align-items: center;
         justify-content: center;
         position: absolute;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .vertical-title-center {
+        top: 100px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .vertical-title-center {
+        top: 90px;
     }
 }
 
@@ -717,7 +730,7 @@ footer {
 .banner-section {
     padding: 0;
     height: 675px;
-    margin-top: inherit;
+    margin-top: 100px;
     position: relative;
     overflow: hidden;
 }
@@ -725,6 +738,13 @@ footer {
 @media (max-width: 991.98px) {
     .banner-section {
         height: auto;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner-section {
+        margin-top: 70px;
     }
 }
 
