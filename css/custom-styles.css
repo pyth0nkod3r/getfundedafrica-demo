@@ -148,6 +148,7 @@
     background: linear-gradient(to bottom, var(--bg-light) 0%, var(--white) 100%);
     padding: 80px 0;
     margin-bottom: 0;
+    margin-top: 100px;
 }
 
 .pricing-card {
@@ -229,6 +230,7 @@
 
     .card-section {
         padding: 60px 0;
+        margin-top: 80px;
     }
 
     .pricing-card {
@@ -313,6 +315,7 @@
 
     .card-section {
         padding: 50px 0;
+        margin-top: 70px;
     }
 
     .pricing-card {
@@ -400,6 +403,7 @@
 
     .card-section {
         padding: 40px 0;
+        margin-top: 60px;
     }
 
     .pricing-card {
@@ -558,8 +562,8 @@
 
 /* Footer Styles */
 .footer-logo img {
-    transform: scale(8);
-    margin: 3rem auto;
+    transform: scale(6);
+    margin: 2rem auto;
     max-width: 50px;
     height: auto;
     display: block;
@@ -567,29 +571,29 @@
 
 @media (max-width: 1199.98px) {
     .footer-logo img {
-        transform: scale(7);
-        margin: 2.5rem auto;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .footer-logo img {
-        transform: scale(6);
-        margin: 2rem auto;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .footer-logo img {
         transform: scale(5);
         margin: 1.8rem auto;
     }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
+    .footer-logo img {
+        transform: scale(4.5);
+        margin: 1.5rem auto;
+    }
+}
+
+@media (max-width: 767.98px) {
     .footer-logo img {
         transform: scale(4);
-        margin: 1.5rem auto;
+        margin: 1.2rem auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer-logo img {
+        transform: scale(3.5);
+        margin: 1rem auto;
         max-width: 45px;
     }
 }
@@ -612,12 +616,54 @@ footer {
     }
 }
 
-color: var(--white);
-border-color: var(--white);
-transform: translateY(-2px);
+/* Banner Slider Styles */
+.banner-slider {
+    height: 100%;
+    width: 100%;
 }
 
-/* Footer spacing */
-footer {
-    margin-top: 0;
+.banner-slider .swiper-slide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.banner-slider .swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-pagination-progress {
+    width: 100px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+    position: relative;
+}
+
+.swiper-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--base-color);
+    width: var(--swiper-progress, 0%);
+    transition: width 0.3s ease;
+}
+
+.swiper-pagination-wrapper {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.number-prev,
+.number-next {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.cover-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
