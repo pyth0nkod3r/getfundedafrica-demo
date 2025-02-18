@@ -39,8 +39,8 @@
 
 .default-logo,
 .alt-logo {
-  transform: scale(0.7);
-  margin-left: 0.5rem;
+  transform: scale(4);
+  margin-left: 2.5rem;
   max-width: 20px;
   height: auto;
 }
@@ -194,8 +194,8 @@
 @media (max-width: 1199.98px) {
   .default-logo,
   .alt-logo {
-    transform: scale(0.65);
-    margin-left: 0.4rem;
+    transform: scale(3.5);
+    margin-left: 2rem;
   }
 
   .stack-box h1.text-dark-gray {
@@ -209,8 +209,8 @@
 @media (max-width: 991.98px) {
   .default-logo,
   .alt-logo {
-    transform: scale(0.6);
-    margin-left: 0.3rem;
+    transform: scale(3);
+    margin-left: 1.8rem;
   }
 
   .navbar-collapse {
@@ -380,9 +380,9 @@
 @media (max-width: 575.98px) {
   .default-logo,
   .alt-logo {
-    transform: scale(0.55);
-    margin-left: 0.3rem;
-    max-width: 25px;
+    transform: scale(2);
+    margin-left: 1rem;
+    max-width: 35px;
   }
 
   .full-screen {
@@ -559,9 +559,9 @@
 
 /* Footer Styles */
 .footer-logo img {
-  transform: scale(1.2);
-  margin: 0.5rem auto;
-  max-width: 30px;
+  transform: scale(2.5);
+  margin: 1rem auto;
+  max-width: 40px;
   height: auto;
   display: block;
   background: white;
@@ -571,30 +571,30 @@
 
 @media (max-width: 1199.98px) {
   .footer-logo img {
-    transform: scale(1.1);
-    margin: 0.4rem auto;
+    transform: scale(2.2);
+    margin: 0.8rem auto;
   }
 }
 
 @media (max-width: 991.98px) {
   .footer-logo img {
-    transform: scale(1);
-    margin: 0.3rem auto;
+    transform: scale(2);
+    margin: 0.7rem auto;
   }
 }
 
 @media (max-width: 767.98px) {
   .footer-logo img {
-    transform: scale(0.9);
-    margin: 0.3rem auto;
+    transform: scale(1.8);
+    margin: 0.6rem auto;
   }
 }
 
 @media (max-width: 575.98px) {
   .footer-logo img {
-    transform: scale(0.8);
-    margin: 0.2rem auto;
-    max-width: 25px;
+    transform: scale(1.5);
+    margin: 0.5rem auto;
+    max-width: 35px;
   }
 }
 
