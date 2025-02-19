@@ -1,0 +1,158 @@
+<?php 
+namespace App\Controllers;
+
+use CodeIgniter\Controller;
+use Config\Session;
+use PHPMailer\PHPMailer\PHPMailer;
+use CodeIgniter\I18n\Time;
+use Config\Services;
+
+class Download extends BaseController {
+    protected $gfa_model;
+    protected $admin_model;
+
+    public function __construct() {
+        //parent::__construct();
+        $this->gfa_model = model('App\Models\GfaModel');
+        $this->admin_model = model('App\Models\AdminModel');
+    	helper('translate');
+
+        // $emailVerifySession  = session()->get('email') ;
+
+        // if (!empty($emailVerifySession)) {
+        //     $user_action = request()->uri->getSegment(2);
+        //     $this->saveUserActivity($user_action, $emailVerifySession);
+        // }
+
+    }
+
+
+    public function download_logic($filename, $fetchResults){
+        $filename = "$filename.xls";
+        header("Content-Type: application/vnd.ms-excel");
+        header("Content-Disposition: attachment; filename=\"$filename\"");
+        $isPrintHeader = false;
+        if (! empty($fetchResults)) {
+            foreach ($fetchResults as $row) {
+                if (! $isPrintHeader) {
+                    echo implode("\t", array_keys($row)) . "\n";
+                    $isPrintHeader = true;
+                }
+                echo implode("\t", array_values($row)) . "\n";
+            }
+        }
+        exit();
+    }
+
+
+    public function onbaord_individual($business_growth){
+
+        i
+
+        $productResult = $this->admin_model->getAllVentureBuilding();  
+
+        $onbaord_individual = $this->request->getPost("onbaord_individual");
+
+        if (isset($onbaord_individual)) {
+           $this->download_logic($business_growth,$productResult);
+        }
+
+    }
+
+    public function news($news){
+        i
+
+        $newsResults = $this->admin_model->getAllNews();  
+
+        $newsPost   = $this->request->getPost("news");
+
+    if(isset($newsPost)){
+        $this->download_logic($news, $newsResults);
+    }
+
+    }
+
+    public function learning($learning){
+        i
+
+        $learningResults = $this->admin_model->getAllLearning();
+
+        $learningPost = $this->request->getPost("learning");
+
+        if( isset($learningPost)){
+            $this->download_logic($learning, $learningResults);
+        }
+    }
+
+    public function cohort_harmattan($cohort_harmattan){
+        i
+
+        $cohort_harmattan_results = $this->admin_model->getCohortHarmattan();
+
+        $cohort_harmattan_post = $this->request->getPost("cohort_harmattan");
+
+        if( isset($cohort_harmattan_post)){
+            $this->download_logic($cohort_harmattan, $cohort_harmattan_results);
+        }
+    }
+
+
+    public function insight($insight){
+        i
+
+        $insightResults = $this->admin_model->getAllInsight();
+
+        $insightPost = $this->request->getPost("insight");
+
+        if( isset($insightPost)){
+            $this->download_logic($insight, $insightResults);
+        }
+    }
+
+
+    public function funding($funding){
+        i
+
+        $fundingResult = $this->admin_model->getAllFunding();
+
+        $fundingPost = $this->request->getPost("funding");
+
+        if( isset($fundingPost)){
+            $this->download_logic($funding, $fundingResult);
+        }
+    }
+
+    public function mentors($mentors){
+        i
+
+        $mentorsResult = $this->admin_model->getAllMentors();
+
+        $mentorsPost = $this->request->getPost("mentors");
+
+        if( isset($mentorsPost)){
+            $this->download_logic($mentors, $mentorsResult);
+        }
+    }
+
+    public function export($table_name = null){
+        // i
+
+        // $insightResults = $this->admin_model->getAllInsight();
+
+        // $insightPost = $this->request->getPost("insight");
+
+        // if( isset($insightPost)){
+        //     $this->download_logic($insight, $insightResults);
+        // }
+
+        // $table_name = $this->uri->segment('3');
+        // $column_name = $this->uri->segment('4');
+        // $colmun_value = $this->request->getPost("column_value");
+
+        $fetchResult = $this->admin_model->getDownloads($table_name);
+
+        // $this->download_logic($table_name, $fetchResult);
+
+    }
+
+}
