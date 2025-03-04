@@ -180,8 +180,13 @@
           <div
             class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center"
           >
+            <!-- Free Plan -->
             <div class="col">
-              <div class="pricing-card">
+              <div
+                class="pricing-card"
+                data-plan="free"
+                onclick="selectPlan(this)"
+              >
                 <div class="pricing-header">
                   <h3 class="plan-name">Free</h3>
                   <div class="price-container">
@@ -215,14 +220,20 @@
                   </ul>
                 </div>
                 <div class="pricing-action">
-                  <a href="#" class="btn btn-outline-primary w-100"
-                    >Get Started Free</a
-                  >
+                  <button class="btn btn-outline-primary w-100 select-plan-btn">
+                    Get Started Free
+                  </button>
                 </div>
               </div>
             </div>
+
+            <!-- Premium Bi-Annual Plan -->
             <div class="col">
-              <div class="pricing-card popular">
+              <div
+                class="pricing-card popular"
+                data-plan="premium-biannual"
+                onclick="selectPlan(this)"
+              >
                 <div class="popular-badge">Most Popular</div>
                 <div class="pricing-header">
                   <h3 class="plan-name">Premium Bi-Annual</h3>
@@ -258,12 +269,20 @@
                   </ul>
                 </div>
                 <div class="pricing-action">
-                  <a href="#" class="btn btn-primary w-100">Choose Plan</a>
+                  <button class="btn btn-primary w-100 select-plan-btn">
+                    Choose Plan
+                  </button>
                 </div>
               </div>
             </div>
+
+            <!-- Premium Annual Plan -->
             <div class="col">
-              <div class="pricing-card">
+              <div
+                class="pricing-card"
+                data-plan="premium-annual"
+                onclick="selectPlan(this)"
+              >
                 <div class="pricing-header">
                   <h3 class="plan-name">Premium Annual</h3>
                   <div class="price-container">
@@ -285,9 +304,9 @@
                   </ul>
                 </div>
                 <div class="pricing-action">
-                  <a href="#" class="btn btn-outline-primary w-100"
-                    >Choose Plan</a
-                  >
+                  <button class="btn btn-outline-primary w-100 select-plan-btn">
+                    Choose Plan
+                  </button>
                 </div>
               </div>
             </div>
@@ -376,6 +395,7 @@
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/vendors.min.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/custom-js.js"></script>
 
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
