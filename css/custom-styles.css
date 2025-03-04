@@ -108,7 +108,7 @@
 }
 
 .cover-background-3 {
-  background-image: url("../images/demo-branding-agency-slider-03.png");
+  background-image: url("../images/19.png");
 }
 
 .background-image-4 {
@@ -373,11 +373,21 @@
   }
 
   /* Animate menu items */
-  .navbar-nav .nav-item:nth-child(1) { transition-delay: 0.1s; }
-  .navbar-nav .nav-item:nth-child(2) { transition-delay: 0.2s; }
-  .navbar-nav .nav-item:nth-child(3) { transition-delay: 0.3s; }
-  .navbar-nav .nav-item:nth-child(4) { transition-delay: 0.4s; }
-  .navbar-nav .nav-item:nth-child(5) { transition-delay: 0.5s; }
+  .navbar-nav .nav-item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .navbar-nav .nav-item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .navbar-nav .nav-item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .navbar-nav .nav-item:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .navbar-nav .nav-item:nth-child(5) {
+    transition-delay: 0.5s;
+  }
 
   .card-section {
     padding: 60px 0;
