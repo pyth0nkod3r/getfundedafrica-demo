@@ -10455,10 +10455,6 @@ header.sticky .left-sidebar-nav .navbar-nav .nav-link {
     cursor: pointer
 }
 
-.mfp-wrap,
-.show-search-popup .search-form-wrapper {
-    cursor: url(../images/mfg-close.png), auto
-}
 
 .hamburger-nav {
     width: 50%;
@@ -13393,13 +13389,6 @@ blockquote footer {
     text-align: center
 }
 
-.select-style select {
-    background-image: url(../images/contact-form-down-arrow.jpg);
-    background-position: top 25px right 30px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    background-color: transparent
-}
 
 .terms-condition-box input[type=checkbox] {
     opacity: 0;
@@ -13535,12 +13524,6 @@ blockquote footer {
     color: var(--light-medium-gray)
 }
 
-.contact-form-style-06 .select-style select {
-    color: var(--light-medium-gray);
-    background-image: url(../images/contact-form-arrow-white.png);
-    background-position: top 25px right 20px;
-    padding-right: 45px
-}
 
 .contact-form-style-06 .select-style select option {
     color: var(--dark-gray)
@@ -14268,17 +14251,6 @@ blockquote footer {
     border: 0
 }
 
-.arrow_box.marker02:after {
-    content: "";
-    width: 45px;
-    height: 62px;
-    background: url(../images/marker02.png) left center no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: -15px;
-    top: -58px;
-    float: left
-}
 
 .arrow_box.marker03 {
     width: 16px;
